@@ -14,6 +14,9 @@ Tip: Don't forget to set the initial value to 0
 
 const values = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-const total = null; // Replace null and add .reduce code here
+const total = values.reduce((total, value)=>{
+    total += value;
+    return total;
+},0); // Replace null and add .reduce code here
 
 console.log(total);
